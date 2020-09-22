@@ -26,7 +26,6 @@ import static com.example.agenda.ui.activity.ConstantesActivities.CHAVE_ALUNO;
 public class ListaAlunosActivity extends AppCompatActivity {
 
     public static final String TITULO_APPBAR = "Lista de alunos";
-
     private final AlunoDAO dao = new AlunoDAO();
     private ArrayAdapter<Aluno> adapter;
 
@@ -39,7 +38,6 @@ public class ListaAlunosActivity extends AppCompatActivity {
         configuraLista();
         dao.salva(new Aluno("Lucas", "1212", "lucas.com"));
         dao.salva(new Aluno("Millena", "1212", "Millena.com"));
-
     }
 
     @Override
